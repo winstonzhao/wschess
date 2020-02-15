@@ -7,7 +7,7 @@ namespace WsChess
 void Server::Start()
 {
   Configure();
-  AddIdentificationEndpoint();
+  AddGameEndpoint();
   Listen();
 }
 
@@ -60,12 +60,26 @@ WsEndpoint &Server::AddGenericEndpoint(const std::string name)
   return endpoint;
 }
 
-WsEndpoint &Server::AddIdentificationEndpoint()
+WsEndpoint &Server::AddGameEndpoint()
 {
   auto &endpoint = AddGenericEndpoint("echo");
 
   endpoint.on_message = [](shared_ptr<WsServer::Connection> connection, shared_ptr<WsServer::InMessage> in_message) {
     auto out_message = in_message->string();
+
+    // auto id = uuid()();
+    // std::string x = boost::lexical_cast<std::string>(id);
+
+    auto m = json::parse(out_message);
+    auto type = m["type"].get<std::string>();
+
+    if (type == "gay")
+    {
+      auto j = json::parse(out_message);
+
+      auto i = j.get<WsChess::Identification>();
+      cout << i.name << endl;
+    }
 
     cout << "Server: Message received: \"" << out_message << "\" from " << connection.get() << endl;
 

@@ -1,6 +1,12 @@
 cmake_minimum_required (VERSION 3.0)
 
-add_library(server server.hpp server.cpp)
+add_library(
+  server
+  server.hpp
+  server.cpp
+  communication/identification.hpp
+  communication/identification.cpp
+  )
 
 target_include_directories(server INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 

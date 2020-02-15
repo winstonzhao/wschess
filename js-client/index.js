@@ -6,4 +6,7 @@ ws.on('message', (evt) => {
   console.log(evt);
 });
 
-ws.on('open', () => ws.send("test"));
+ws.on('open', () => ws.send(JSON.stringify({
+  type: 'gay',
+  name: 'winston'
+})));
