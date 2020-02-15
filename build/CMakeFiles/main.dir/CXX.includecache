@@ -472,6 +472,12 @@ emmintrin.h
 intrin.h
 -
 
+../server/communication/identification.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+../libs/json/single_include/nlohmann/json.hpp
+
 ../server/server.hpp
 iostream
 -
@@ -479,12 +485,22 @@ future
 -
 string
 -
+boost/uuid/uuid.hpp
+-
+boost/uuid/uuid_io.hpp
+-
+boost/uuid/uuid_generators.hpp
+-
+boost/lexical_cast.hpp
+-
 ../libs/simple-web-sockets/client_ws.hpp
 ../libs/simple-web-sockets/client_ws.hpp
 ../libs/simple-web-sockets/server_ws.hpp
 ../libs/simple-web-sockets/server_ws.hpp
 ../libs/json/single_include/nlohmann/json.hpp
 ../libs/json/single_include/nlohmann/json.hpp
+communication/identification.hpp
+../server/communication/identification.hpp
 
 /home/winstonzhao/Projects/ws-chess/main.cpp
 server.hpp

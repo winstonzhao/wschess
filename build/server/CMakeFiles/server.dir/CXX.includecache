@@ -472,6 +472,12 @@ emmintrin.h
 intrin.h
 -
 
+/home/winstonzhao/Projects/ws-chess/server/communication/identification.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+/home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
+
 /home/winstonzhao/Projects/ws-chess/server/server.cpp
 server.hpp
 /home/winstonzhao/Projects/ws-chess/server/server.hpp
@@ -483,10 +489,20 @@ future
 -
 string
 -
+boost/uuid/uuid.hpp
+-
+boost/uuid/uuid_io.hpp
+-
+boost/uuid/uuid_generators.hpp
+-
+boost/lexical_cast.hpp
+-
 ../libs/simple-web-sockets/client_ws.hpp
 /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
 ../libs/simple-web-sockets/server_ws.hpp
 /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/server_ws.hpp
 ../libs/json/single_include/nlohmann/json.hpp
 /home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
+communication/identification.hpp
+/home/winstonzhao/Projects/ws-chess/server/communication/identification.hpp
 

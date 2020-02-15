@@ -171,6 +171,33 @@ server/fast:
 	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+communication/identification.o: communication/identification.cpp.o
+
+.PHONY : communication/identification.o
+
+# target to build an object file
+communication/identification.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/identification.cpp.o
+.PHONY : communication/identification.cpp.o
+
+communication/identification.i: communication/identification.cpp.i
+
+.PHONY : communication/identification.i
+
+# target to preprocess a source file
+communication/identification.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/identification.cpp.i
+.PHONY : communication/identification.cpp.i
+
+communication/identification.s: communication/identification.cpp.s
+
+.PHONY : communication/identification.s
+
+# target to generate assembly for a file
+communication/identification.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/identification.cpp.s
+.PHONY : communication/identification.cpp.s
+
 server.o: server.cpp.o
 
 .PHONY : server.o
@@ -211,6 +238,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... communication/identification.o"
+	@echo "... communication/identification.i"
+	@echo "... communication/identification.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
