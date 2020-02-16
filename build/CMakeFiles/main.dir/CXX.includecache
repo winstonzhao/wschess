@@ -472,11 +472,39 @@ emmintrin.h
 intrin.h
 -
 
+../server/communication/error.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+../libs/json/single_include/nlohmann/json.hpp
+messages.hpp
+../server/communication/messages.hpp
+
+../server/communication/generic_response.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+../libs/json/single_include/nlohmann/json.hpp
+
 ../server/communication/identification.hpp
 string
 -
 ../../libs/json/single_include/nlohmann/json.hpp
 ../libs/json/single_include/nlohmann/json.hpp
+
+../server/communication/messages.hpp
+string
+-
+
+../server/game/./room.hpp
+
+../server/game/player.hpp
+string
+-
+memory
+-
+./room.hpp
+../server/game/./room.hpp
 
 ../server/server.hpp
 iostream
@@ -484,6 +512,8 @@ iostream
 future
 -
 string
+-
+unordered_map
 -
 boost/uuid/uuid.hpp
 -
@@ -501,6 +531,16 @@ boost/lexical_cast.hpp
 ../libs/json/single_include/nlohmann/json.hpp
 communication/identification.hpp
 ../server/communication/identification.hpp
+communication/error.hpp
+../server/communication/error.hpp
+communication/messages.hpp
+../server/communication/messages.hpp
+communication/error.hpp
+../server/communication/error.hpp
+communication/generic_response.hpp
+../server/communication/generic_response.hpp
+game/player.hpp
+../server/game/player.hpp
 
 /home/winstonzhao/Projects/ws-chess/main.cpp
 server.hpp

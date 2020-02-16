@@ -10,6 +10,11 @@ CMakeFiles/main.dir/main.cpp.o
  ../libs/simple-web-sockets/server_ws.hpp
  ../libs/simple-web-sockets/status_code.hpp
  ../libs/simple-web-sockets/utility.hpp
+ ../server/communication/error.hpp
+ ../server/communication/generic_response.hpp
  ../server/communication/identification.hpp
+ ../server/communication/messages.hpp
+ ../server/game/./room.hpp
+ ../server/game/player.hpp
  ../server/server.hpp
  /home/winstonzhao/Projects/ws-chess/main.cpp

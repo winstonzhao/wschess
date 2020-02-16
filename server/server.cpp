@@ -4,6 +4,7 @@ using namespace std;
 
 namespace WsChess
 {
+
 void Server::Start()
 {
   Configure();
@@ -42,7 +43,8 @@ WsEndpoint &Server::AddGenericEndpoint(const std::string name)
   };
 
   // See RFC 6455 7.4.1. for status codes
-  endpoint.on_close = [](shared_ptr<WsServer::Connection> connection, int status, const string & /*reason*/) {
+  endpoint.on_close = [this](shared_ptr<WsServer::Connection> connection, int status, const string & /*reason*/) {
+    mPlayers.erase(GetConnectionId(*connection));
     cout << "Server: Closed connection " << connection.get() << " with status code " << status << endl;
   };
 
@@ -52,7 +54,8 @@ WsEndpoint &Server::AddGenericEndpoint(const std::string name)
   };
 
   // See http://www.boost.org/doc/libs/1_55_0/doc/html/boost_asio/reference.html, Error Codes for error code meanings
-  endpoint.on_error = [](shared_ptr<WsServer::Connection> connection, const SimpleWeb::error_code &ec) {
+  endpoint.on_error = [this](shared_ptr<WsServer::Connection> connection, const SimpleWeb::error_code &ec) {
+    mPlayers.erase(GetConnectionId(*connection));
     cout << "Server: Error in connection " << connection.get() << ". "
          << "Error: " << ec << ", error message: " << ec.message() << endl;
   };
@@ -62,39 +65,78 @@ WsEndpoint &Server::AddGenericEndpoint(const std::string name)
 
 WsEndpoint &Server::AddGameEndpoint()
 {
-  auto &endpoint = AddGenericEndpoint("echo");
+  auto &endpoint = AddGenericEndpoint("game");
 
-  endpoint.on_message = [](shared_ptr<WsServer::Connection> connection, shared_ptr<WsServer::InMessage> in_message) {
-    auto out_message = in_message->string();
+  endpoint.on_message = [this](shared_ptr<WsServer::Connection> connection, shared_ptr<WsServer::InMessage> in_message) {
+    auto payload = in_message->string();
 
-    // auto id = uuid()();
-    // std::string x = boost::lexical_cast<std::string>(id);
+    auto id = GetConnectionId(*connection);
 
-    auto m = json::parse(out_message);
-    auto type = m["type"].get<std::string>();
-
-    if (type == "gay")
+    // All Connections Require an ID
+    if (id.empty())
     {
-      auto j = json::parse(out_message);
-
-      auto i = j.get<WsChess::Identification>();
-      cout << i.name << endl;
+      cout << "No id found for connection " << connection.get() << endl;
+      json error = Error("No id found for connection", Errors::NO_ID_FOUND);
+      connection->send(error.dump(), HandleError);
+      return;
     }
 
-    cout << "Server: Message received: \"" << out_message << "\" from " << connection.get() << endl;
+    //  Check type of the message.
+    auto payloadJson = json::parse(payload);
+    auto type = payloadJson["type"].get<std::string>();
 
-    cout << "Server: Sending message \"" << out_message << "\" to " << connection.get() << endl;
+    if (type == Messages::Incoming::IDENTIFICATION)
+    {
+      auto incoming = payloadJson.get<WsChess::Identification>();
+
+      auto id = GetConnectionId(*connection);
+      mPlayers.insert({id, Player(id, incoming.name)});
+      LogPlayers();
+
+      json outgoingJson = GenericResponse(Messages::Outgoing::IDENTIFICATION_CONFIRMATION);
+      connection->send(outgoingJson.dump(), HandleError);
+      return;
+    }
+
+    cout
+        << "Server: Message received: \"" << payload << "\" from " << connection.get() << endl;
+
+    cout << "Server: Sending message \"" << payload << "\" to " << connection.get() << endl;
 
     // connection->send is an asynchronous function
-    connection->send(out_message, [](const SimpleWeb::error_code &ec) {
-      if (ec)
-      {
-        cout << "Server: Error sending message. " <<
-            // See http://www.boost.org/doc/libs/1_55_0/doc/html/boost_asio/reference.html, Error Codes for error code meanings
-            "Error: " << ec << ", error message: " << ec.message() << endl;
-      }
-    });
+    connection->send(payload, HandleError);
   };
+}
+
+void WsChess::Server::LogPlayers()
+{
+  cout << "Logging all players" << endl;
+  for (auto &pair : mPlayers)
+  {
+    cout << "\t" << pair.first << " " << pair.second.GetName() << endl;
+  }
+}
+
+std::string GetConnectionId(const WsServer::Connection &conn)
+{
+  auto pair = conn.header.find("Sec-WebSocket-Key");
+
+  if (pair == conn.header.end())
+  {
+    return "";
+  }
+
+  return pair->second;
+}
+
+void HandleError(const SimpleWeb::error_code &ec)
+{
+  if (ec)
+  {
+    cout << "Server: Error sending message. " <<
+        // See http://www.boost.org/doc/libs/1_55_0/doc/html/boost_asio/reference.html, Error Codes for error code meanings
+        "Error: " << ec << ", error message: " << ec.message() << endl;
+  }
 }
 
 } // namespace WsChess

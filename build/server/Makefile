@@ -171,6 +171,60 @@ server/fast:
 	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+communication/error.o: communication/error.cpp.o
+
+.PHONY : communication/error.o
+
+# target to build an object file
+communication/error.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/error.cpp.o
+.PHONY : communication/error.cpp.o
+
+communication/error.i: communication/error.cpp.i
+
+.PHONY : communication/error.i
+
+# target to preprocess a source file
+communication/error.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/error.cpp.i
+.PHONY : communication/error.cpp.i
+
+communication/error.s: communication/error.cpp.s
+
+.PHONY : communication/error.s
+
+# target to generate assembly for a file
+communication/error.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/error.cpp.s
+.PHONY : communication/error.cpp.s
+
+communication/generic_response.o: communication/generic_response.cpp.o
+
+.PHONY : communication/generic_response.o
+
+# target to build an object file
+communication/generic_response.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/generic_response.cpp.o
+.PHONY : communication/generic_response.cpp.o
+
+communication/generic_response.i: communication/generic_response.cpp.i
+
+.PHONY : communication/generic_response.i
+
+# target to preprocess a source file
+communication/generic_response.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/generic_response.cpp.i
+.PHONY : communication/generic_response.cpp.i
+
+communication/generic_response.s: communication/generic_response.cpp.s
+
+.PHONY : communication/generic_response.s
+
+# target to generate assembly for a file
+communication/generic_response.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/generic_response.cpp.s
+.PHONY : communication/generic_response.cpp.s
+
 communication/identification.o: communication/identification.cpp.o
 
 .PHONY : communication/identification.o
@@ -197,6 +251,60 @@ communication/identification.s: communication/identification.cpp.s
 communication/identification.cpp.s:
 	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/identification.cpp.s
 .PHONY : communication/identification.cpp.s
+
+game/player.o: game/player.cpp.o
+
+.PHONY : game/player.o
+
+# target to build an object file
+game/player.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/player.cpp.o
+.PHONY : game/player.cpp.o
+
+game/player.i: game/player.cpp.i
+
+.PHONY : game/player.i
+
+# target to preprocess a source file
+game/player.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/player.cpp.i
+.PHONY : game/player.cpp.i
+
+game/player.s: game/player.cpp.s
+
+.PHONY : game/player.s
+
+# target to generate assembly for a file
+game/player.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/player.cpp.s
+.PHONY : game/player.cpp.s
+
+game/room.o: game/room.cpp.o
+
+.PHONY : game/room.o
+
+# target to build an object file
+game/room.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/room.cpp.o
+.PHONY : game/room.cpp.o
+
+game/room.i: game/room.cpp.i
+
+.PHONY : game/room.i
+
+# target to preprocess a source file
+game/room.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/room.cpp.i
+.PHONY : game/room.cpp.i
+
+game/room.s: game/room.cpp.s
+
+.PHONY : game/room.s
+
+# target to generate assembly for a file
+game/room.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/room.cpp.s
+.PHONY : game/room.cpp.s
 
 server.o: server.cpp.o
 
@@ -238,9 +346,21 @@ help:
 	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... communication/error.o"
+	@echo "... communication/error.i"
+	@echo "... communication/error.s"
+	@echo "... communication/generic_response.o"
+	@echo "... communication/generic_response.i"
+	@echo "... communication/generic_response.s"
 	@echo "... communication/identification.o"
 	@echo "... communication/identification.i"
 	@echo "... communication/identification.s"
+	@echo "... game/player.o"
+	@echo "... game/player.i"
+	@echo "... game/player.s"
+	@echo "... game/room.o"
+	@echo "... game/room.i"
+	@echo "... game/room.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
