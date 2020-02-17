@@ -6,19 +6,23 @@ server/CMakeFiles/server.dir/communication/error.cpp.o: ../server/communication/
 server/CMakeFiles/server.dir/communication/error.cpp.o: ../server/communication/error.hpp
 server/CMakeFiles/server.dir/communication/error.cpp.o: ../server/communication/messages.hpp
 
-server/CMakeFiles/server.dir/communication/generic_response.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
-server/CMakeFiles/server.dir/communication/generic_response.cpp.o: ../server/communication/generic_response.cpp
-server/CMakeFiles/server.dir/communication/generic_response.cpp.o: ../server/communication/generic_response.hpp
+server/CMakeFiles/server.dir/communication/generic_message.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
+server/CMakeFiles/server.dir/communication/generic_message.cpp.o: ../server/communication/generic_message.cpp
+server/CMakeFiles/server.dir/communication/generic_message.cpp.o: ../server/communication/generic_message.hpp
 
 server/CMakeFiles/server.dir/communication/identification.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
 server/CMakeFiles/server.dir/communication/identification.cpp.o: ../server/communication/identification.cpp
 server/CMakeFiles/server.dir/communication/identification.cpp.o: ../server/communication/identification.hpp
 
-server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/./room.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/asio_compatibility.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/client_ws.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/crypto.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/mutex.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/server_ws.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/status_code.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/utility.hpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/player.cpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/player.hpp
-
-server/CMakeFiles/server.dir/game/room.cpp.o: ../server/game/room.cpp
 
 server/CMakeFiles/server.dir/server.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../libs/simple-web-sockets/asio_compatibility.hpp
@@ -29,10 +33,9 @@ server/CMakeFiles/server.dir/server.cpp.o: ../libs/simple-web-sockets/server_ws.
 server/CMakeFiles/server.dir/server.cpp.o: ../libs/simple-web-sockets/status_code.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../libs/simple-web-sockets/utility.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/error.hpp
-server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/generic_response.hpp
+server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/generic_message.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/identification.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/messages.hpp
-server/CMakeFiles/server.dir/server.cpp.o: ../server/game/./room.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/game/player.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/server.hpp

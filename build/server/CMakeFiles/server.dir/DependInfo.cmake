@@ -5,10 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/winstonzhao/Projects/ws-chess/server/communication/error.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/communication/error.cpp.o"
-  "/home/winstonzhao/Projects/ws-chess/server/communication/generic_response.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/communication/generic_response.cpp.o"
+  "/home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/communication/generic_message.cpp.o"
   "/home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/communication/identification.cpp.o"
   "/home/winstonzhao/Projects/ws-chess/server/game/player.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/game/player.cpp.o"
-  "/home/winstonzhao/Projects/ws-chess/server/game/room.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/game/room.cpp.o"
   "/home/winstonzhao/Projects/ws-chess/server/server.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

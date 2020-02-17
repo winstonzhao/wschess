@@ -9,15 +9,15 @@
 #include <boost/uuid/uuid_generators.hpp>
 #include <boost/lexical_cast.hpp>
 
-#include "../libs/simple-web-sockets/client_ws.hpp"
 #include "../libs/simple-web-sockets/server_ws.hpp"
+#include "../libs/simple-web-sockets/client_ws.hpp"
 #include "../libs/json/single_include/nlohmann/json.hpp"
 
 #include "communication/identification.hpp"
 #include "communication/error.hpp"
 #include "communication/messages.hpp"
 #include "communication/error.hpp"
-#include "communication/generic_response.hpp"
+#include "communication/generic_message.hpp"
 #include "game/player.hpp"
 
 using WsServer = SimpleWeb::SocketServer<SimpleWeb::WS>;

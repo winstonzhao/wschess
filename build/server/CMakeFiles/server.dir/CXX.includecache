@@ -480,7 +480,7 @@ string
 messages.hpp
 /home/winstonzhao/Projects/ws-chess/server/communication/messages.hpp
 
-/home/winstonzhao/Projects/ws-chess/server/communication/generic_response.hpp
+/home/winstonzhao/Projects/ws-chess/server/communication/generic_message.hpp
 string
 -
 ../../libs/json/single_include/nlohmann/json.hpp
@@ -496,15 +496,15 @@ string
 string
 -
 
-/home/winstonzhao/Projects/ws-chess/server/game/./room.hpp
-
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 string
 -
 memory
 -
-./room.hpp
-/home/winstonzhao/Projects/ws-chess/server/game/./room.hpp
+../../libs/simple-web-sockets/server_ws.hpp
+/home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/server_ws.hpp
+../../libs/simple-web-sockets/client_ws.hpp
+/home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
 
 /home/winstonzhao/Projects/ws-chess/server/server.cpp
 server.hpp
@@ -527,10 +527,10 @@ boost/uuid/uuid_generators.hpp
 -
 boost/lexical_cast.hpp
 -
-../libs/simple-web-sockets/client_ws.hpp
-/home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
 ../libs/simple-web-sockets/server_ws.hpp
 /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/server_ws.hpp
+../libs/simple-web-sockets/client_ws.hpp
+/home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
 ../libs/json/single_include/nlohmann/json.hpp
 /home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
 communication/identification.hpp
@@ -541,8 +541,8 @@ communication/messages.hpp
 /home/winstonzhao/Projects/ws-chess/server/communication/messages.hpp
 communication/error.hpp
 /home/winstonzhao/Projects/ws-chess/server/communication/error.hpp
-communication/generic_response.hpp
-/home/winstonzhao/Projects/ws-chess/server/communication/generic_response.hpp
+communication/generic_message.hpp
+/home/winstonzhao/Projects/ws-chess/server/communication/generic_message.hpp
 game/player.hpp
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 

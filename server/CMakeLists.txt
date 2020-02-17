@@ -8,13 +8,11 @@ add_library(
   communication/identification.cpp
   communication/error.hpp
   communication/error.cpp
-  communication/generic_response.hpp
-  communication/generic_response.cpp
+  communication/generic_message.hpp
+  communication/generic_message.cpp
   communication/messages.hpp
   game/player.hpp
   game/player.cpp
-  game/room.hpp
-  game/room.cpp
   )
 
 target_include_directories(server INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
