@@ -14,6 +14,18 @@ server/CMakeFiles/server.dir/communication/identification.cpp.o
  /home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
  /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp
  /home/winstonzhao/Projects/ws-chess/server/communication/identification.hpp
+server/CMakeFiles/server.dir/communication/state_update.cpp.o
+ /home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/asio_compatibility.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/crypto.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/mutex.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/server_ws.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/status_code.hpp
+ /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/utility.hpp
+ /home/winstonzhao/Projects/ws-chess/server/communication/state_update.cpp
+ /home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
+ /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 server/CMakeFiles/server.dir/game/player.cpp.o
  /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/asio_compatibility.hpp
  /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
@@ -37,6 +49,7 @@ server/CMakeFiles/server.dir/server.cpp.o
  /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.hpp
  /home/winstonzhao/Projects/ws-chess/server/communication/identification.hpp
  /home/winstonzhao/Projects/ws-chess/server/communication/messages.hpp
+ /home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
  /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
  /home/winstonzhao/Projects/ws-chess/server/server.cpp
  /home/winstonzhao/Projects/ws-chess/server/server.hpp

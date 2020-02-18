@@ -18,6 +18,7 @@
 #include "communication/messages.hpp"
 #include "communication/error.hpp"
 #include "communication/generic_message.hpp"
+#include "communication/state_update.hpp"
 #include "game/player.hpp"
 
 using WsServer = SimpleWeb::SocketServer<SimpleWeb::WS>;
@@ -39,6 +40,7 @@ private:
   WsEndpoint &AddGenericEndpoint(const std::string endpoint);
   WsEndpoint &AddGameEndpoint();
   void LogPlayers();
+  void NotifyPlayersOfChanges();
 
 private:
   WsServer mWsServer;

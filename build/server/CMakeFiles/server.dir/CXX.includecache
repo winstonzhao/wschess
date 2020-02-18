@@ -500,6 +500,18 @@ string
 string
 -
 
+/home/winstonzhao/Projects/ws-chess/server/communication/state_update.cpp
+state_update.hpp
+/home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
+
+/home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+/home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
+../game/player.hpp
+/home/winstonzhao/Projects/ws-chess/server/game/player.hpp
+
 /home/winstonzhao/Projects/ws-chess/server/game/player.cpp
 player.hpp
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
@@ -551,6 +563,8 @@ communication/error.hpp
 /home/winstonzhao/Projects/ws-chess/server/communication/error.hpp
 communication/generic_message.hpp
 /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.hpp
+communication/state_update.hpp
+/home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
 game/player.hpp
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 

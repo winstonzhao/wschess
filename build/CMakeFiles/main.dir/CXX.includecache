@@ -496,6 +496,14 @@ string
 string
 -
 
+../server/communication/state_update.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+../libs/json/single_include/nlohmann/json.hpp
+../game/player.hpp
+../server/game/player.hpp
+
 ../server/game/player.hpp
 string
 -
@@ -539,6 +547,8 @@ communication/error.hpp
 ../server/communication/error.hpp
 communication/generic_message.hpp
 ../server/communication/generic_message.hpp
+communication/state_update.hpp
+../server/communication/state_update.hpp
 game/player.hpp
 ../server/game/player.hpp
 

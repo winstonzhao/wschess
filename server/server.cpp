@@ -92,6 +92,11 @@ WsEndpoint &Server::AddGameEndpoint()
       mPlayers.insert({id, Player(id, incoming.name, connection.get())});
       LogPlayers();
 
+      json confirm = GenericMessage(Messages::Outgoing::IDENT_CONFIRM, id);
+      connection->send(confirm.dump(), HandleError);
+
+      NotifyPlayersOfChanges();
+
       return;
     }
 
@@ -121,6 +126,16 @@ void WsChess::Server::LogPlayers()
   for (auto &pair : mPlayers)
   {
     cout << "\t" << pair.first << " " << pair.second.GetName() << endl;
+  }
+}
+
+void WsChess::Server::NotifyPlayersOfChanges()
+{
+  for (auto &playerPair : mPlayers)
+  {
+    auto &player = playerPair.second;
+    json stateUpdate = StateUpdate(Messages::Outgoing::STATE_UPDATE, &mPlayers);
+    player.GetConnection()->send(stateUpdate.dump(), HandleError);
   }
 }
 

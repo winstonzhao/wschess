@@ -252,6 +252,33 @@ communication/identification.cpp.s:
 	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/identification.cpp.s
 .PHONY : communication/identification.cpp.s
 
+communication/state_update.o: communication/state_update.cpp.o
+
+.PHONY : communication/state_update.o
+
+# target to build an object file
+communication/state_update.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/state_update.cpp.o
+.PHONY : communication/state_update.cpp.o
+
+communication/state_update.i: communication/state_update.cpp.i
+
+.PHONY : communication/state_update.i
+
+# target to preprocess a source file
+communication/state_update.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/state_update.cpp.i
+.PHONY : communication/state_update.cpp.i
+
+communication/state_update.s: communication/state_update.cpp.s
+
+.PHONY : communication/state_update.s
+
+# target to generate assembly for a file
+communication/state_update.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/communication/state_update.cpp.s
+.PHONY : communication/state_update.cpp.s
+
 game/player.o: game/player.cpp.o
 
 .PHONY : game/player.o
@@ -328,6 +355,9 @@ help:
 	@echo "... communication/identification.o"
 	@echo "... communication/identification.i"
 	@echo "... communication/identification.s"
+	@echo "... communication/state_update.o"
+	@echo "... communication/state_update.i"
+	@echo "... communication/state_update.s"
 	@echo "... game/player.o"
 	@echo "... game/player.i"
 	@echo "... game/player.s"

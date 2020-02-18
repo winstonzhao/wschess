@@ -10,6 +10,8 @@ add_library(
   communication/error.cpp
   communication/generic_message.hpp
   communication/generic_message.cpp
+  communication/state_update.hpp
+  communication/state_update.cpp
   communication/messages.hpp
   game/player.hpp
   game/player.cpp

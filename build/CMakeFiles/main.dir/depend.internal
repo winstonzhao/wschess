@@ -14,6 +14,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../server/communication/generic_message.hpp
  ../server/communication/identification.hpp
  ../server/communication/messages.hpp
+ ../server/communication/state_update.hpp
  ../server/game/player.hpp
  ../server/server.hpp
  /home/winstonzhao/Projects/ws-chess/main.cpp

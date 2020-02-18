@@ -1,1 +1,1 @@
-/usr/bin/g++-7    -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main server/libserver.a -lpthread -lboost_system -lboost_thread -lpthread -lboost_system -lboost_thread -lboost_coroutine -lboost_context -lboost_chrono -lboost_date_time -lboost_atomic -lssl -lcrypto 
+/usr/bin/g++-7  -g  -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main server/libserver.a -lpthread -lboost_system -lboost_thread -lpthread -lboost_system -lboost_thread -lboost_coroutine -lboost_context -lboost_chrono -lboost_date_time -lboost_atomic -lssl -lcrypto 
