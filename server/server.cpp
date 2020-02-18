@@ -92,8 +92,6 @@ WsEndpoint &Server::AddGameEndpoint()
       mPlayers.insert({id, Player(id, incoming.name, connection.get())});
       LogPlayers();
 
-      json outgoingJson = GenericMessage(Messages::Outgoing::IDENTIFICATION_CONFIRM);
-      connection->send(outgoingJson.dump(), HandleError);
       return;
     }
 
@@ -106,53 +104,6 @@ WsEndpoint &Server::AddGameEndpoint()
     }
 
     auto player = playerIdPair->second;
-
-    if (type == Messages::Incoming::CREATE_ROOM)
-    {
-      if (player.IsInRoom())
-      {
-        json error = Error("Player is already in a room.", Errors::PLAYER_IN_ROOM);
-        connection->send(error.dump(), HandleError);
-        return;
-      }
-
-      player.SetIsInRoom(true);
-      json out = GenericMessage(Messages::Outgoing::CREATE_ROOM_CONFIRM, id);
-      connection->send(out.dump(), HandleError);
-      return;
-    }
-    else if (type == Messages::Incoming::JOIN_ROOM)
-    {
-      if (player.IsInRoom())
-      {
-        json error = Error("Player is already in a room.", Errors::PLAYER_IN_ROOM);
-        connection->send(error.dump(), HandleError);
-        return;
-      }
-
-      auto incoming = payloadJson.get<WsChess::GenericMessage>();
-      auto opponentIdPair = mPlayers.find(incoming.message);
-
-      if (opponentIdPair == mPlayers.end())
-      {
-        json error = Error("Opponent does not exist.", Errors::OPPONENT_DOESNT_EXIST);
-        connection->send(error.dump(), HandleError);
-        return;
-      }
-
-      auto opponent = opponentIdPair->second;
-      opponent.SetOpponent(&player);
-      player.SetOpponent(&opponent);
-      player.SetIsInRoom(true);
-
-      json out = GenericMessage(Messages::Outgoing::JOIN_ROOM_CONFIRM, id);
-      connection->send(out.dump(), HandleError);
-      LogPlayers();
-      return;
-    }
-    else if (type == Messages::Incoming::LEAVE_ROOM)
-    {
-    }
 
     cout
         << "Server: Message received: \"" << payload << "\" from " << connection.get() << endl;
@@ -169,7 +120,7 @@ void WsChess::Server::LogPlayers()
   cout << "Logging all players" << endl;
   for (auto &pair : mPlayers)
   {
-    cout << "\t" << pair.first << " " << pair.second.GetName() << " " << pair.second.IsInRoom() << endl;
+    cout << "\t" << pair.first << " " << pair.second.GetName() << endl;
   }
 }
 

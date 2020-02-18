@@ -60,67 +60,67 @@ include server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/server.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object server/CMakeFiles/server.dir/server.cpp.o"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/server.cpp
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/server.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/server.cpp
 
 server/CMakeFiles/server.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/server.cpp.i"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/server.cpp > CMakeFiles/server.dir/server.cpp.i
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/server.cpp > CMakeFiles/server.dir/server.cpp.i
 
 server/CMakeFiles/server.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/server.cpp.s"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/server.cpp -o CMakeFiles/server.dir/server.cpp.s
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/server.cpp -o CMakeFiles/server.dir/server.cpp.s
 
 server/CMakeFiles/server.dir/communication/identification.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/communication/identification.cpp.o: ../server/communication/identification.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object server/CMakeFiles/server.dir/communication/identification.cpp.o"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/communication/identification.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/communication/identification.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp
 
 server/CMakeFiles/server.dir/communication/identification.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/communication/identification.cpp.i"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp > CMakeFiles/server.dir/communication/identification.cpp.i
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp > CMakeFiles/server.dir/communication/identification.cpp.i
 
 server/CMakeFiles/server.dir/communication/identification.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/communication/identification.cpp.s"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp -o CMakeFiles/server.dir/communication/identification.cpp.s
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp -o CMakeFiles/server.dir/communication/identification.cpp.s
 
 server/CMakeFiles/server.dir/communication/error.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/communication/error.cpp.o: ../server/communication/error.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object server/CMakeFiles/server.dir/communication/error.cpp.o"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/communication/error.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/communication/error.cpp
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/communication/error.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/communication/error.cpp
 
 server/CMakeFiles/server.dir/communication/error.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/communication/error.cpp.i"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/communication/error.cpp > CMakeFiles/server.dir/communication/error.cpp.i
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/communication/error.cpp > CMakeFiles/server.dir/communication/error.cpp.i
 
 server/CMakeFiles/server.dir/communication/error.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/communication/error.cpp.s"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/communication/error.cpp -o CMakeFiles/server.dir/communication/error.cpp.s
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/communication/error.cpp -o CMakeFiles/server.dir/communication/error.cpp.s
 
 server/CMakeFiles/server.dir/communication/generic_message.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/communication/generic_message.cpp.o: ../server/communication/generic_message.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object server/CMakeFiles/server.dir/communication/generic_message.cpp.o"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/communication/generic_message.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/communication/generic_message.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp
 
 server/CMakeFiles/server.dir/communication/generic_message.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/communication/generic_message.cpp.i"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp > CMakeFiles/server.dir/communication/generic_message.cpp.i
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp > CMakeFiles/server.dir/communication/generic_message.cpp.i
 
 server/CMakeFiles/server.dir/communication/generic_message.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/communication/generic_message.cpp.s"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp -o CMakeFiles/server.dir/communication/generic_message.cpp.s
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/communication/generic_message.cpp -o CMakeFiles/server.dir/communication/generic_message.cpp.s
 
 server/CMakeFiles/server.dir/game/player.cpp.o: server/CMakeFiles/server.dir/flags.make
 server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/player.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object server/CMakeFiles/server.dir/game/player.cpp.o"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/game/player.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/game/player.cpp
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/game/player.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/game/player.cpp
 
 server/CMakeFiles/server.dir/game/player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/game/player.cpp.i"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/game/player.cpp > CMakeFiles/server.dir/game/player.cpp.i
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/game/player.cpp > CMakeFiles/server.dir/game/player.cpp.i
 
 server/CMakeFiles/server.dir/game/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/game/player.cpp.s"
-	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/game/player.cpp -o CMakeFiles/server.dir/game/player.cpp.s
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/game/player.cpp -o CMakeFiles/server.dir/game/player.cpp.s
 
 # Object files for target server
 server_OBJECTS = \

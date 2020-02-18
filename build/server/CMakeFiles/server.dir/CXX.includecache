@@ -472,6 +472,10 @@ emmintrin.h
 intrin.h
 -
 
+/home/winstonzhao/Projects/ws-chess/server/communication/error.cpp
+error.hpp
+/home/winstonzhao/Projects/ws-chess/server/communication/error.hpp
+
 /home/winstonzhao/Projects/ws-chess/server/communication/error.hpp
 string
 -
@@ -495,6 +499,10 @@ string
 /home/winstonzhao/Projects/ws-chess/server/communication/messages.hpp
 string
 -
+
+/home/winstonzhao/Projects/ws-chess/server/game/player.cpp
+player.hpp
+/home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 string
