@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/winstonzhao/Projects/ws-chess/server/communication/identification.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/communication/identification.cpp.o"
   "/home/winstonzhao/Projects/ws-chess/server/communication/state_update.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/communication/state_update.cpp.o"
   "/home/winstonzhao/Projects/ws-chess/server/game/player.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/game/player.cpp.o"
+  "/home/winstonzhao/Projects/ws-chess/server/game/pos.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/game/pos.cpp.o"
   "/home/winstonzhao/Projects/ws-chess/server/server.cpp" "/home/winstonzhao/Projects/ws-chess/build/server/CMakeFiles/server.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

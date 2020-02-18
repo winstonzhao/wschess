@@ -25,7 +25,9 @@ server/CMakeFiles/server.dir/communication/state_update.cpp.o: ../libs/simple-we
 server/CMakeFiles/server.dir/communication/state_update.cpp.o: ../server/communication/state_update.cpp
 server/CMakeFiles/server.dir/communication/state_update.cpp.o: ../server/communication/state_update.hpp
 server/CMakeFiles/server.dir/communication/state_update.cpp.o: ../server/game/player.hpp
+server/CMakeFiles/server.dir/communication/state_update.cpp.o: ../server/game/pos.hpp
 
+server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/asio_compatibility.hpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/client_ws.hpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/crypto.hpp
@@ -35,6 +37,11 @@ server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/statu
 server/CMakeFiles/server.dir/game/player.cpp.o: ../libs/simple-web-sockets/utility.hpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/player.cpp
 server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/player.hpp
+server/CMakeFiles/server.dir/game/player.cpp.o: ../server/game/pos.hpp
+
+server/CMakeFiles/server.dir/game/pos.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
+server/CMakeFiles/server.dir/game/pos.cpp.o: ../server/game/pos.cpp
+server/CMakeFiles/server.dir/game/pos.cpp.o: ../server/game/pos.hpp
 
 server/CMakeFiles/server.dir/server.cpp.o: ../libs/json/single_include/nlohmann/json.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../libs/simple-web-sockets/asio_compatibility.hpp
@@ -50,6 +57,7 @@ server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/identificatio
 server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/messages.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/communication/state_update.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/game/player.hpp
+server/CMakeFiles/server.dir/server.cpp.o: ../server/game/pos.hpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/server.cpp
 server/CMakeFiles/server.dir/server.cpp.o: ../server/server.hpp
 

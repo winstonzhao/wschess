@@ -15,6 +15,7 @@ CMakeFiles/main.dir/main.cpp.o: ../server/communication/identification.hpp
 CMakeFiles/main.dir/main.cpp.o: ../server/communication/messages.hpp
 CMakeFiles/main.dir/main.cpp.o: ../server/communication/state_update.hpp
 CMakeFiles/main.dir/main.cpp.o: ../server/game/player.hpp
+CMakeFiles/main.dir/main.cpp.o: ../server/game/pos.hpp
 CMakeFiles/main.dir/main.cpp.o: ../server/server.hpp
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 

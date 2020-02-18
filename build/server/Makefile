@@ -306,6 +306,33 @@ game/player.cpp.s:
 	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/player.cpp.s
 .PHONY : game/player.cpp.s
 
+game/pos.o: game/pos.cpp.o
+
+.PHONY : game/pos.o
+
+# target to build an object file
+game/pos.cpp.o:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/pos.cpp.o
+.PHONY : game/pos.cpp.o
+
+game/pos.i: game/pos.cpp.i
+
+.PHONY : game/pos.i
+
+# target to preprocess a source file
+game/pos.cpp.i:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/pos.cpp.i
+.PHONY : game/pos.cpp.i
+
+game/pos.s: game/pos.cpp.s
+
+.PHONY : game/pos.s
+
+# target to generate assembly for a file
+game/pos.cpp.s:
+	cd /home/winstonzhao/Projects/ws-chess/build && $(MAKE) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/game/pos.cpp.s
+.PHONY : game/pos.cpp.s
+
 server.o: server.cpp.o
 
 .PHONY : server.o
@@ -361,6 +388,9 @@ help:
 	@echo "... game/player.o"
 	@echo "... game/player.i"
 	@echo "... game/player.s"
+	@echo "... game/pos.o"
+	@echo "... game/pos.i"
+	@echo "... game/pos.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

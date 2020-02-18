@@ -472,10 +472,6 @@ emmintrin.h
 intrin.h
 -
 
-/home/winstonzhao/Projects/ws-chess/server/communication/error.cpp
-error.hpp
-/home/winstonzhao/Projects/ws-chess/server/communication/error.hpp
-
 /home/winstonzhao/Projects/ws-chess/server/communication/error.hpp
 string
 -
@@ -500,20 +496,12 @@ string
 string
 -
 
-/home/winstonzhao/Projects/ws-chess/server/communication/state_update.cpp
-state_update.hpp
-/home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
-
 /home/winstonzhao/Projects/ws-chess/server/communication/state_update.hpp
 string
 -
 ../../libs/json/single_include/nlohmann/json.hpp
 /home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
 ../game/player.hpp
-/home/winstonzhao/Projects/ws-chess/server/game/player.hpp
-
-/home/winstonzhao/Projects/ws-chess/server/game/player.cpp
-player.hpp
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
 
 /home/winstonzhao/Projects/ws-chess/server/game/player.hpp
@@ -525,6 +513,14 @@ memory
 /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/server_ws.hpp
 ../../libs/simple-web-sockets/client_ws.hpp
 /home/winstonzhao/Projects/ws-chess/libs/simple-web-sockets/client_ws.hpp
+pos.hpp
+/home/winstonzhao/Projects/ws-chess/server/game/pos.hpp
+
+/home/winstonzhao/Projects/ws-chess/server/game/pos.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+/home/winstonzhao/Projects/ws-chess/libs/json/single_include/nlohmann/json.hpp
 
 /home/winstonzhao/Projects/ws-chess/server/server.cpp
 server.hpp

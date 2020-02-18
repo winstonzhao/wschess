@@ -15,6 +15,8 @@ add_library(
   communication/messages.hpp
   game/player.hpp
   game/player.cpp
+  game/pos.hpp
+  game/pos.cpp
   )
 
 target_include_directories(server INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})

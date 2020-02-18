@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/server.dir/communication/generic_message.cpp.o"
   "CMakeFiles/server.dir/communication/state_update.cpp.o"
   "CMakeFiles/server.dir/game/player.cpp.o"
+  "CMakeFiles/server.dir/game/pos.cpp.o"
   "libserver.pdb"
   "libserver.a"
 )

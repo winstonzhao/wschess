@@ -513,6 +513,14 @@ memory
 ../libs/simple-web-sockets/server_ws.hpp
 ../../libs/simple-web-sockets/client_ws.hpp
 ../libs/simple-web-sockets/client_ws.hpp
+pos.hpp
+../server/game/pos.hpp
+
+../server/game/pos.hpp
+string
+-
+../../libs/json/single_include/nlohmann/json.hpp
+../libs/json/single_include/nlohmann/json.hpp
 
 ../server/server.hpp
 iostream

@@ -135,6 +135,19 @@ server/CMakeFiles/server.dir/game/player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/game/player.cpp.s"
 	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/game/player.cpp -o CMakeFiles/server.dir/game/player.cpp.s
 
+server/CMakeFiles/server.dir/game/pos.cpp.o: server/CMakeFiles/server.dir/flags.make
+server/CMakeFiles/server.dir/game/pos.cpp.o: ../server/game/pos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object server/CMakeFiles/server.dir/game/pos.cpp.o"
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/server.dir/game/pos.cpp.o -c /home/winstonzhao/Projects/ws-chess/server/game/pos.cpp
+
+server/CMakeFiles/server.dir/game/pos.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/game/pos.cpp.i"
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/winstonzhao/Projects/ws-chess/server/game/pos.cpp > CMakeFiles/server.dir/game/pos.cpp.i
+
+server/CMakeFiles/server.dir/game/pos.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/game/pos.cpp.s"
+	cd /home/winstonzhao/Projects/ws-chess/build/server && /usr/bin/g++-7 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/winstonzhao/Projects/ws-chess/server/game/pos.cpp -o CMakeFiles/server.dir/game/pos.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/server.cpp.o" \
@@ -142,7 +155,8 @@ server_OBJECTS = \
 "CMakeFiles/server.dir/communication/error.cpp.o" \
 "CMakeFiles/server.dir/communication/generic_message.cpp.o" \
 "CMakeFiles/server.dir/communication/state_update.cpp.o" \
-"CMakeFiles/server.dir/game/player.cpp.o"
+"CMakeFiles/server.dir/game/player.cpp.o" \
+"CMakeFiles/server.dir/game/pos.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -153,9 +167,10 @@ server/libserver.a: server/CMakeFiles/server.dir/communication/error.cpp.o
 server/libserver.a: server/CMakeFiles/server.dir/communication/generic_message.cpp.o
 server/libserver.a: server/CMakeFiles/server.dir/communication/state_update.cpp.o
 server/libserver.a: server/CMakeFiles/server.dir/game/player.cpp.o
+server/libserver.a: server/CMakeFiles/server.dir/game/pos.cpp.o
 server/libserver.a: server/CMakeFiles/server.dir/build.make
 server/libserver.a: server/CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libserver.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/winstonzhao/Projects/ws-chess/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libserver.a"
 	cd /home/winstonzhao/Projects/ws-chess/build/server && $(CMAKE_COMMAND) -P CMakeFiles/server.dir/cmake_clean_target.cmake
 	cd /home/winstonzhao/Projects/ws-chess/build/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 

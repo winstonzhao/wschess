@@ -108,7 +108,15 @@ WsEndpoint &Server::AddGameEndpoint()
       connection->send(error.dump(), HandleError);
     }
 
-    auto player = playerIdPair->second;
+    auto &player = playerIdPair->second;
+
+    if (type == Messages::Incoming::MOVEMENT)
+    {
+      auto incoming = payloadJson.get<WsChess::Pos>();
+      player.SetPos(incoming);
+      NotifyPlayersOfChanges();
+      return;
+    }
 
     cout
         << "Server: Message received: \"" << payload << "\" from " << connection.get() << endl;
