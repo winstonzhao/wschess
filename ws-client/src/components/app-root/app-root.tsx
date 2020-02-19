@@ -2,6 +2,7 @@ import { Component, h, Element } from "@stencil/core";
 import { HTMLStencilElement } from "@stencil/core/internal";
 import { PLAYER_RADIUS, MOVE_SPEED } from "../../org/constants";
 import { Player } from "../../org/players";
+import { Server } from "../../org/server";
 
 @Component({
   tag: "app-root",
@@ -12,8 +13,10 @@ export class AppRoot {
   canvas: HTMLCanvasElement;
   keys: { [key: string]: boolean } = {};
 
+  server: Server;
+
   player: Player;
-  otherPlayers: Player[];
+  otherPlayers: Player[] = [];
 
   componentWillLoad() {
     window.addEventListener("resize", () => {
@@ -23,7 +26,7 @@ export class AppRoot {
     window.onkeyup = (e: KeyboardEvent) => (this.keys[e.key] = false);
     window.onkeydown = (e: KeyboardEvent) => (this.keys[e.key] = true);
 
-    this.player = new Player();
+    this.server = new Server(this);
   }
 
   componentDidLoad() {
@@ -36,6 +39,10 @@ export class AppRoot {
   }
 
   updateGameState() {
+    if (!this.player) {
+      return;
+    }
+
     let dx = 0,
       dy = 0;
 
@@ -66,13 +73,19 @@ export class AppRoot {
     } else if (this.player.y > window.innerHeight - PLAYER_RADIUS) {
       this.player.y = window.innerHeight - PLAYER_RADIUS;
     }
+
+    if (dx || dy) {
+      this.server.sendMove(this.player);
+    }
   }
 
   draw() {
     const ctx = this.canvas.getContext("2d");
     ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-    this.player.render(ctx);
+    if (this.player) {
+      this.player.render(ctx);
+    }
     this.otherPlayers.forEach(p => p.render(ctx));
   }
 

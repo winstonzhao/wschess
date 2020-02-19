@@ -1,10 +1,7 @@
 import { PLAYER_RADIUS, CURRENT_PLAYER_COLOR } from "./constants";
 
 export class Player {
-  x: number = 0;
-  y: number = 0;
-
-  constructor() {}
+  constructor(public id: string, public x = 0, public y = 0) {}
 
   render(ctx: CanvasRenderingContext2D) {
     ctx.beginPath();

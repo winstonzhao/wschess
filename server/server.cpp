@@ -94,9 +94,6 @@ WsEndpoint &Server::AddGameEndpoint()
 
       json confirm = GenericMessage(Messages::Outgoing::IDENT_CONFIRM, id);
       connection->send(confirm.dump(), HandleError);
-
-      NotifyPlayersOfChanges();
-
       return;
     }
 
