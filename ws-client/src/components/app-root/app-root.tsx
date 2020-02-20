@@ -84,7 +84,7 @@ export class AppRoot {
     ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
     if (this.player) {
-      this.player.render(ctx);
+      this.player.render(ctx, true);
     }
     this.otherPlayers.forEach(p => p.render(ctx));
   }

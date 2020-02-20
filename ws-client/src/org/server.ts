@@ -22,7 +22,7 @@ export class Server {
   configure() {
     this.root;
 
-    this.ws = new WebSocket("ws://localhost:8080/game");
+    this.ws = new WebSocket("ws://159.65.237.122:8080/game");
     this.ws.onmessage = evt => {
       console.log(evt.data);
       const msg = JSON.parse(evt.data as string);
